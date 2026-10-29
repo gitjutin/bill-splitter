@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from app.split_evenly import split_evenly
 
 app = FastAPI()
@@ -10,6 +10,4 @@ def split_evenly_endpoint(total_amount: float, num_people: int):
         split_amounts = split_evenly(total_amount, num_people)
         return {"split_amounts": [float(amount) for amount in split_amounts]}
     except ValueError as e:
-        return {"error": str(e)}
-    except ArithmeticError as e:
-        return {"error": str(e)}
+        raise HTTPException(status_code=400, detail=str(e))
