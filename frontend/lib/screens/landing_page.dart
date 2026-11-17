@@ -6,8 +6,13 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Itemized')),
-      body: Center(child: Text('Split a bill!')),
+      body: Stack(
+        children: [
+          Image.asset(
+            'assets/images/blurredBG.png',
+            fit: BoxFit.cover,
+          ),
+        ]),
     );
   }
 }
