@@ -34,6 +34,15 @@ class LandingPage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Center(
+                    child: Text(
+                      'Bill splitting made easy',
+                      style: GoogleFonts.playfair(
+                        fontSize: 25,
+                        color: Colors.white.withValues(alpha: 0.3),
+                      ),
+                    ),
+                  ),
                   
                   const Spacer(),
 
@@ -43,9 +52,9 @@ class LandingPage extends StatelessWidget {
                       },
                       style: FilledButton.styleFrom(
                         //backgroundColor: Colors.transparent,
-                        backgroundColor: Colors.white.withValues(alpha: 0.15),
+                        backgroundColor: Colors.white.withValues(alpha: 0.05),
                         //foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                        padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 12),
                       ),
                       child: Text(
                         'New Bill',
@@ -54,6 +63,36 @@ class LandingPage extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
+                  ),
+
+                  TextButton(
+                    onPressed: () {
+                      //TODO: add onpressed logic
+                    },
+                    //style: ElevatedButton.styleFrom(
+                      //backgroundColor: Colors.white.withValues(alpha: 0.15),
+                      //padding: EdgeInsets.symmetric(vertical: 4, horizontal: 12),
+                    //),
+                    child: Text(
+                      'Bill History',
+                      style: GoogleFonts.playfair(
+                        fontSize: 35,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+
+                  TextButton(
+                    onPressed: (){
+                      //TODO: implement onpressed logic
+                    },
+                    child: Text(
+                      'Settings',
+                      style: GoogleFonts.playfair(
+                        fontSize: 35,
+                        color: Colors.white,
+                      ), 
+                    ),
                   ),
                 ],
               ),
