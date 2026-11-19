@@ -4,6 +4,10 @@ Split bills or receipts with a group of people by snapping a photo of the receip
 
 > CURRENTLY: Work in progress!
 
+<p align="center">
+  <img src="docs/screenshots/Screenshot 2026-11-18 231136.png" width="250" />
+</p>
+
 ## Features 
 - [X] Evenly split the bill
 - [ ] Manual entry ( split by item w/ names for individuals)
